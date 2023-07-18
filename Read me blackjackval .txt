@@ -1,0 +1,45 @@
+KingdomCarla
+Blackjackval XML 
+
+This is a small xml  I created to work with RicX Blackjack for Valentine. 
+It’s FREE, try it on you server. 
+- If you don’t have RicX blackjack and the script below is not added to your (Ricx Blackjack) config, you can still use the map but there will be no table, chair or dealer. Just an empty space in the corner of the small saloon. All decor will still be placed. 
+Enjoy 🥃
+
+Download and extract XML file. 
+Place file in your resources  
+Add the code below to your Ricx blackjack config
+Ensure blackjackval 
+Restart your server
+
+Here is the script to add to your ricx blackjack config 
+
+ [10] = {
+        name = "Valentine BJ",--valentine
+        blip = {true, "blip_mg_blackjack"}, --true or false for blip, and the name of blip or hash number
+        tablecoords = {x = -243.75288391113, y = 771.34576416016, z = 117.08512115479},--coordinates of the table
+        tablerotate = {x = 0.0, y = 0.0, z = 67.41822052002},--rotation of the table 
+        dealercoords = {x = -244.53, y = 771.61, z = 117.09},--coordinates of the dealer ped
+        chaircoords = {x = -242.41351318359, y = 770.78649902344, z = 117.08968353271},--coordinates of the chair 
+        chairrotate = {x = 0.0, y= 0.0, z = -113.99291229248},--rotation of the chair
+        dealerheading = 246.63,--dealer ped heading
+        dealerModel = "MP_U_M_M_FOS_SDSALOON_GAMBLER_01",--dealer ped model
+        dealername = "Jack",-- dealer ped name - not relevant
+        dealerPreset = 0, -- dealer ped model preset number
+        cardStyle = 1,--card style, between 1-9 maximum
+        softDealer = false,--true or false, if true Dealer wont call for new card if the points are 17 or higher. If false, Dealer will call the card and risk above 17
+        betAmounts = {1.0, 5.0, 10.0, 50.0, 100.0, 250.0, 500.0},--the amount of bet options to add bet
+        maxBet = 500.0,--the maximum amount of the bet can be at table
+        tableModel = 3,--table model id, check Config.TableModels above
+        props = {Cards = true, Chips = true, Money = true},--true or false for creating props for table
+        cardModel = 1,--card model id, check Config.CardModels above
+        chipModel = 1,--chip model id, check Config.ChipModels above
+        moneyModel = 2,--money model id, check Config.MoneyModels above
+        talkType = 0,--0 male , 1 female, 2 upperclass male | for talking style of dealer peds
+        talkCategory = 2,--talk style ID, check Config.TalkCategories below |male 1-20, female 21-27
+    },
+
+If you need help feel free to reach out to me on discord. Look for the Kingdom maps at the bottom of our discord channel. 
+
+https://discord.gg/3SQZMjfuuN 
+￼
